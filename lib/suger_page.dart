@@ -17,7 +17,7 @@ class _SugerPageState extends State<SugerPage> {
           child: Column(
             children: [
               SizedBox(height: 50),
-              Text('Sugerencias',
+              Text('Sugerencias y Comentarios',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24,),
               ),
 
@@ -37,6 +37,18 @@ class _SugerPageState extends State<SugerPage> {
                         ),
                       ),
                     )
+                ),
+              ),
+              SizedBox(height: 25),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 120.0),
+                child: Container(
+                  padding: EdgeInsets.all(20),
+                  decoration: BoxDecoration(color: Colors.indigo,
+                      borderRadius: BorderRadius.circular(16)),
+                  child: Center(
+                    child: Text('Enviar'),
+                  ),
                 ),
               ),
             ], //
