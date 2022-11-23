@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'login_page.dart';
+import 'register_page.dart';
 
 class HomePage extends StatelessWidget{
   @override
@@ -19,11 +21,17 @@ class HomePage extends StatelessWidget{
                   Tab(
                       text: 'Registrarse'
                   ),
-                  Tab(
-                      text: 'Acerca de'
-                  ),
 
-                ])
+
+                ]),
+            Expanded(
+              child: TabBarView(children: [
+                LoginPage(),
+                RegisterPage(),
+
+              ]),
+            )
+
           ],
         ),
       ),
