@@ -20,10 +20,25 @@ class _SugerPageState extends State<SugerPage> {
               Text('Sugerencias',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24,),
               ),
-              const SizedBox(
-                height: 100.0,
-                child: TextField(),
-              )
+
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 60.0),
+                child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.grey),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 200),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                        ),
+                      ),
+                    )
+                ),
+              ),
             ], //
           ),
         ),
