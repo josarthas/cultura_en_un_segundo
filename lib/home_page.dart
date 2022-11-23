@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'login_page.dart';
 import 'register_page.dart';
+import 'programmer_page.dart';
 
 class HomePage extends StatelessWidget{
   @override
@@ -21,6 +22,9 @@ class HomePage extends StatelessWidget{
                   Tab(
                       text: 'Registrarse'
                   ),
+                  Tab(
+                      text: 'Programadores'
+                  ),
 
 
                 ]),
@@ -28,6 +32,7 @@ class HomePage extends StatelessWidget{
               child: TabBarView(children: [
                 LoginPage(),
                 RegisterPage(),
+                ProgrammerPage(),
 
               ]),
             )
